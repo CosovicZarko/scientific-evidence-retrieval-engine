@@ -1,0 +1,5 @@
+# This is a text-only retrieval demo. Avoid Streamlit's module watcher
+# inspecting optional Hugging Face vision modules (which need torchvision).
+# Disable file watching for deployed/local demos; manually restart after edits.
+[server]
+fileWatcherType = "none"

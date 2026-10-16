@@ -1,0 +1,30 @@
+{
+  "note": "Example observed in a prior local Mac run. These are retrieved candidate passages, not independently verified evidence.",
+  "query": "A strong bias in the phage genome locations where the spacers were derived has been observed in many CRISPR subtypes that confer the immunity to phage.",
+  "top_ranked": [
+    {
+      "rank": 1,
+      "doc_id": 26996935,
+      "sentence_ids": [
+        "D26996935:S6",
+        "D26996935:S5"
+      ]
+    },
+    {
+      "rank": 2,
+      "doc_id": 3512154,
+      "sentence_ids": [
+        "D3512154:S7",
+        "D3512154:S4"
+      ]
+    },
+    {
+      "rank": 3,
+      "doc_id": 11336632,
+      "sentence_ids": [
+        "D11336632:S1",
+        "D11336632:S2"
+      ]
+    }
+  ]
+}

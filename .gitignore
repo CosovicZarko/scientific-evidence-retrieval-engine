@@ -1,0 +1,27 @@
+# Local environments and generated files
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+.env
+.env.*
+!.env.example
+
+# Do not commit local corpus, model weights, or caches (includes symlinks)
+/data
+/checkpoints
+/.cache
+/reports
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.tar.gz
+*.zip
+*.bak
+
+.venv-broken-*/
+
+.venv-broken-*/
