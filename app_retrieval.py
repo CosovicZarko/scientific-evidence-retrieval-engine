@@ -25,16 +25,10 @@ EXAMPLE_CLAIMS = [
 @st.cache_resource(show_spinner=False)
 def load_resources():
     """Reuse the models and cache-backed index across Streamlit reruns."""
-    if not CORPUS.is_file():
-        raise FileNotFoundError(
-            f"SciFact corpus missing: {CORPUS}. Run the asset installer in the README."
-        )
-    if not (CHECKPOINT / "config.json").is_file() or not (
-        CHECKPOINT / "model.safetensors"
-    ).is_file():
-        raise FileNotFoundError(
-            f"Fine-tuned checkpoint missing: {CHECKPOINT}. Run the asset installer."
-        )
+    # Public deployments start without local data or model files.
+    # Reuse the project's validated installers on the first search.
+    from scripts.prepare_hosted_assets import prepare_assets
+    prepare_assets(BASE)
 
     from bm25_retriever import load_corpus
     from cached_hybrid_retriever import CachedHybridRetriever
