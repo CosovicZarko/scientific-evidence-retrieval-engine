@@ -2,6 +2,8 @@
 
 Search and rank scientific research using **BM25, semantic embeddings, and a fine-tuned PyTorch reranker**. The Streamlit app searches **5,183 SciFact abstracts** and shows three ranked papers with two relevant source sentences per paper.
 
+**[Live Demo](https://scientific-evidence-retrieval-engine-xwhwswyalin22p3ekbg9d8.streamlit.app/)**
+
 ## How it works
 
 1. **Retrieve:** BM25 and `all-MiniLM-L6-v2` semantic search.
